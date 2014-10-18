@@ -7,7 +7,7 @@ app = require("express")()
 port = process.env.PORT || 3000
 
 app.post "/", (req, res) ->
-	res.header "Access-Control-Allow-Origin", "http://simplygits.github.io/"
+	res.header "Access-Control-Allow-Origin", "*"
 	res.header "Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept"
 
 	data = ""
