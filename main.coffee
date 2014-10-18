@@ -4,6 +4,8 @@ _ = require "lodash"
 
 app = require("express")()
 
+port = process.env.PORT || 3000
+
 app.post "/", (req, res) ->
 	res.header "Access-Control-Allow-Origin", "http://simplygits.github.io/"
 	res.header "Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept"
@@ -21,4 +23,4 @@ app.post "/", (req, res) ->
 			request { url: body.url, method: body.method, headers }, (error, response = {}, content) ->
 				res.send EJSON.stringify { error, headers: response.headers, content }
 
-server = app.listen "80", -> console.log "running on port 80."
+server = app.listen "port", -> console.log "running on port: #{port}."
