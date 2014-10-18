@@ -23,4 +23,4 @@ app.post "/", (req, res) ->
 			request { url: body.url, method: body.method, headers }, (error, response = {}, content) ->
 				res.send EJSON.stringify { error, headers: response.headers, content }
 
-server = app.listen "port", -> console.log "running on port: #{port}."
+server = app.listen port, -> console.log "running on port: #{port}."
