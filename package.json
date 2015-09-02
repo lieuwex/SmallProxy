@@ -7,13 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Lieuwe Rooijakkers <lieuwerooijakkers@gmail.com> (http://lieuwex.github.io/)",
-  "license": "GPLv3",
+  "license": "GPL-3.0",
   "dependencies": {
-    "coffee-script": "^1.8.0",
-    "ejson": "^1.0.1",
-    "express": "^4.9.8",
-    "lodash": "^2.4.1",
-    "request": "^2.45.0"
+    "request": "^2.61.0"
   },
   "devDependencies": {}
 }
