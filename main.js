@@ -37,6 +37,7 @@ http.createServer(function (req, res) {
 				error: error,
 				headers: response && response.headers,
 				content: content,
+				statusCode: response && response.statusCode,
 			}))
 		})
 	})
